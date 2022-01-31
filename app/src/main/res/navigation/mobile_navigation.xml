@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_live_score">
+
+    <fragment
+        android:id="@+id/navigation_live_score"
+        android:name="com.bayarsahintekin.baynba.ui.live_score.LiveScoreFragment"
+        android:label="@string/title_live_score"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_standings"
+        android:name="com.bayarsahintekin.baynba.ui.standings.StandingsFragment"
+        android:label="@string/title_standings"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_teams"
+        android:name="com.bayarsahintekin.baynba.ui.teams.TeamsFragment"
+        android:label="@string/title_teams"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.bayarsahintekin.baynba.ui.stats.StatsFragment"
+        android:label="@string/title_stats"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.bayarsahintekin.baynba.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
